@@ -1,17 +1,18 @@
 import React from "react";
- const BestPokemon = (props) => {
+import "./App.css";
+const BestPokemon = (props) => {
   console.log(props);
-   return (
-     <div>
-       <p>My favorite Pokemon is Squirtle</p>
-       <ul>
-         <ul>
-           {props.abilities.map((ability) => (
-             <li>{ability}</li>
-           ))}
-         </ul>
-       </ul>
-     </div>
-   );
- };
- export default BestPokemon;
+  return (
+    <div>
+      <p>My favorite Pokemon is Squirtle</p>
+      <ul>
+        <ul className="list">
+          {props.abilities.map((ability) => (
+            <li>{ability}</li>
+          ))}
+        </ul>
+      </ul>
+    </div>
+  );
+};
+export default BestPokemon;
