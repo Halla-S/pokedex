@@ -40,3 +40,6 @@
  list-style-type: none;
  color:rgb(211, 19, 121)
 }
+ul li{
+  display: inline;
+}
