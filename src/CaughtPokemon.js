@@ -8,9 +8,11 @@ const CaughtPokemon = (props) => {
   console.log(oneName);
   const [caught, setCaught] = useState([]);
   const clickHandler = () => setCaught((caught) => caught.concat(oneName));
+  const reset = ()=> setCaught([]);
   return (
     <div>
       <button onClick={clickHandler}>Click Me</button>
+      <button onClick={reset}>Reset</button>
 
       <p>
         Caught {caught.length} on {props.date}
