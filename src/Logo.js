@@ -1,24 +1,16 @@
-import React,{ useState } from "react";
-import "./App.css";
-console.log(useState);
+import React from "react";
+
 const Logo = (props) => {
-  console.log(props);
-  //const appName = "Halla's Pokedex";
   return (
     <header>
-      <div>
-        <h1>Welcome to {props.appName}</h1>
-      </div>
-      <div>
-        <img
-          onClick={props.handleClick}
-          src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png"
-          alt=""
-        ></img>
-      </div>
+      <h1>Welcome to the {props.appName}</h1>
+      <img
+        onClick={props.handleClick}
+        src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png"
+        alt="Pokedex"
+      />
     </header>
   );
 };
+
 export default Logo;
-
-
